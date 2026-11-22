@@ -36,8 +36,8 @@ button:focus-visible {
 /*Alto contraste*/
 html.alto-contraste,
 html.alto-contraste body {
-  background-color: #242832;
-  color: #e5e7eb;
+  background-color: #2d3247;
+  color: #c7dbe0;
 }
 
 html.alto-contraste a {
@@ -45,13 +45,13 @@ html.alto-contraste a {
 }
 
 html.alto-contraste button {
-  background-color: #303746;
+  background-color: #3e634c;
   color: #e5e7eb;
-  border: 2px solid #aeb8c8;
+  border: 2px solid #85aa9e;
 }
 
 html.alto-contraste :focus-visible {
-  outline-color: #c3b5e5;
+  outline-color: #bccfb9;
 }
 
 /* Página atual no menu */
@@ -69,10 +69,10 @@ html {
 }
 
 html.alto-contraste {
-  --fundo-pagina: #242832;
-  --fundo-painel: #303746;
-  --borda-painel: #aeb8c8;
-  --fundo-pagina-atual: #3b4658;
+  --fundo-pagina: #3e634c;
+  --fundo-painel: #191f2e;
+  --borda-painel: #99af9e;
+  --fundo-pagina-atual: #21332f;
 }
 
 /* Largura e fundo da página */
@@ -125,4 +125,79 @@ main h1 {
 
 main p {
   max-width: 68ch;
+}
+
+/* Menu em tons pastel */
+html:not(.alto-contraste) nav {
+  background-color: #e0efe7;
+  border-color: #a9c8b8;
+}
+
+html:not(.alto-contraste) nav a {
+  color: #193d30;
+}
+
+html:not(.alto-contraste) nav a[aria-current="page"] {
+  background-color: #bddccc;
+}
+
+html:not(.alto-contraste) nav a:focus-visible {
+  outline-color: #193d30;
+}
+
+/* Botões de acessibilidade */
+button {
+  padding: 0.5rem 0.85rem;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+html:not(.alto-contraste) button {
+  background-color: #e0efe7;
+  color: #193d30;
+  border: 2px solid #5f8574;
+}
+
+/* Botão com a opção ativa */
+button[aria-pressed="true"] {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Cartões de artigos da página inicial */
+.lista-artigos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  padding: 0;
+}
+
+.lista-artigos li {
+  list-style: none;
+  padding: 1rem;
+  background-color: var(--fundo-pagina-atual);
+  border: 1px solid var(--borda-painel);
+  border-radius: 0.75rem;
+}
+
+.lista-artigos a {
+  font-weight: bold;
+}
+
+.lista-artigos p {
+  margin: 0.5rem 0 0;
+}
+
+/* Imagens dos artigos */
+main figure {
+  margin: 1.5rem 0;
+}
+
+main figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
 }
