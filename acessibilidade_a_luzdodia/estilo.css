@@ -59,3 +59,70 @@ nav a[aria-current="page"] {
   font-weight: bold;
   text-decoration-thickness: 0.18em;
 }
+
+/* Cores do menu e da área de leitura */
+html {
+  --fundo-pagina: #eef5f1;
+  --fundo-painel: #fff;
+  --borda-painel: #becfc5;
+  --fundo-pagina-atual: #d9eee2;
+}
+
+html.alto-contraste {
+  --fundo-pagina: #242832;
+  --fundo-painel: #303746;
+  --borda-painel: #aeb8c8;
+  --fundo-pagina-atual: #3b4658;
+}
+
+/* Largura e fundo da página */
+body {
+  max-width: 64rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  background-color: var(--fundo-pagina);
+}
+
+/* Menu e conteúdo */
+nav,
+main {
+  background-color: var(--fundo-painel);
+  border: 1px solid var(--borda-painel);
+  border-radius: 1rem;
+  margin-block: 1rem;
+}
+
+nav {
+  padding: 0.75rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+nav a[aria-current="page"] {
+  background-color: var(--fundo-pagina-atual);
+}
+
+main {
+  padding: clamp(1rem, 4vw, 2.5rem);
+}
+
+main h1 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+main p {
+  max-width: 68ch;
+}
