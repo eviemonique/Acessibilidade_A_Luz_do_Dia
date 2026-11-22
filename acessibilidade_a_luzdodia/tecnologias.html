@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>	Tecnologias assistivas| Acessibilidade a Luz do Dia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="acessibilidade.js" defer></script>
+</head>
+<body>
+    <a href="#conteudo">Ir para o conteúdo principal</a>
+    <nav aria-label="Menu principal">
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="ruas.html">Acessibilidade nas ruas</a></li>
+    <li><a href="escola.html">Acessibilidade na escola</a></li>
+    <li><a href="internet.html">Acessibilidade na internet</a></li>
+    <li><a href="tecnologias.html" aria-current="page">Tecnologias assistivas</a></li>
+  </ul>
+</nav>
+
+<!-- Botões de acessibilidade -->
+<button type="button" id="fonte-maior" aria-pressed="false" hidden>
+  Texto maior
+</button>
+<button type="button" id="alto-contraste" aria-pressed="false" hidden>
+  Alto contraste
+</button>
+
+<!-- Conteúdo principal -->
+  <main id="conteudo" tabindex="-1">
+
+  <h1>Tecnologias assistivas</h1>
+  <p>“Tecnologias assistivas ajudam pessoas a realizar atividades com mais autonomia.”</p>
+
+  <h2>Como funciona um leitor de tela?</h2>
+
+  <p>Um leitor de tela ajuda a percorrer títulos e links interpretando 
+     a estrutura do código da página e permitindo saltos diretos por meio de atalhos de teclado
+     ou gestos, sem depender de leitura linear ou do mouse.</p>
+
+  <h2>Como facilitar a navegação?</h2>
+  <p>Os links do menu devem receber o foco com a tecla Tab e abrir
+     com Enter. Um destaque visível indica qual link está selecionado.</p>
+</main>
+</body>

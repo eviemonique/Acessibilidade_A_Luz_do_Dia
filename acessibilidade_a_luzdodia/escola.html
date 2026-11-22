@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acessibilidade nas escolas | Acessibilidade a Luz do Dia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="acessibilidade.js" defer></script>
+</head>
+<body>
+    <a href="#conteudo">Ir para o conteúdo principal</a>
+    <nav aria-label="Menu principal">
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="ruas.html">Acessibilidade nas ruas</a></li>
+    <li><a href="escola.html" aria-current="page">Acessibilidade na escola</a></li>
+    <li><a href="internet.html">Acessibilidade na internet</a></li>
+    <li><a href="tecnologias.html">Tecnologias assistivas</a></li>
+  </ul>
+</nav>
+
+<!-- Botões de acessibilidade -->
+<button type="button" id="fonte-maior" aria-pressed="false" hidden>
+  Texto maior
+</button>
+<button type="button" id="alto-contraste" aria-pressed="false" hidden>
+  Alto contraste
+</button>
+
+<!-- Conteúdo principal -->
+  <main id="conteudo" tabindex="-1">
+  <h1>Acessibilidade na escola</h1>
+
+  <p>Quando uma aula usa um vídeo sem legendas, estudantes surdos
+     ou com deficiência auditiva podem perder parte da explicação.</p>
+
+  <h2>O que pode melhorar o acesso?</h2>
+  <p>Legendas ajudam a acompanhar as falas e os sons importantes
+     para entender o vídeo.</p>
+</main>
+</body>

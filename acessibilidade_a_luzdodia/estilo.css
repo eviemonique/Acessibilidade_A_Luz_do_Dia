@@ -1,0 +1,61 @@
+/*Estilo geral da pag*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #182230;
+  line-height: 1.6;
+  max-width: 68ch;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a {
+  color: #174a85;
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 3px solid #182230;
+  outline-offset: 8px;
+}
+
+/*Texto maior*/
+html.texto-maior {
+  font-size: 150%;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 3px solid #182230;
+  outline-offset: 4px;
+}
+
+/*Alto contraste*/
+html.alto-contraste,
+html.alto-contraste body {
+  background-color: #242832;
+  color: #e5e7eb;
+}
+
+html.alto-contraste a {
+  color: #b9d5f5;
+}
+
+html.alto-contraste button {
+  background-color: #303746;
+  color: #e5e7eb;
+  border: 2px solid #aeb8c8;
+}
+
+html.alto-contraste :focus-visible {
+  outline-color: #c3b5e5;
+}
+
+/* Página atual no menu */
+nav a[aria-current="page"] {
+  font-weight: bold;
+  text-decoration-thickness: 0.18em;
+}
